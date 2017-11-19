@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Line Length</title>
+    <title>Font Properties</title>
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/gasolin/aframe-href-component/master/dist/aframe-href-component.min.js"></script>
 </head>
  
 <body>
@@ -16,8 +17,13 @@
                fill="backwards" from="1 1 1" to="0.1 0.1 0.1"></a-animation>
             </a-cursor>
         </a-entity>
-        
-        <a-link position="0 1.61 -1" scale="0.2 0.2 0.2" href="typeface.html" title="My Homepage" image="bg.png"></a-link>
+         
+                    <a-link title="Typeface" position="0 1.3 -1" scale="0.25 0.25 0.25" href="typeface.html" image="portal.png" >
+                   </a-link>
+                   <a-box id="orange-cube" position="0 3.5 -2" rotation="30 30 0"
+      width="2" depth="2" height="2" color="#F16745"
+      href="typeface.html"></a-box>
+
         
         <a-plane color="black" height="100" width="100" rotation="-90 0 0" material="color:#333"></a-plane>
        
@@ -28,6 +34,5 @@
      
 </body>
 </html>
-
 
 
