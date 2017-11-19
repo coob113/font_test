@@ -8,9 +8,11 @@
 <body>
     <a-scene class="fullscreen" fog="far:10;color:#edeef4;near:0;density:0" >
         
-        <a-entity position="0 1.61 0" camera="userHeight:0.01" look-controls="" data-aframe-inspector-original-camera=""></a-entity>
+        <a-entity position="0 1.61 0" camera="userHeight:0.01" look-controls="" data-aframe-inspector-original-camera="">
+            <a-cursor color="lavender" opacity="0.5" raycaster="" cursor=""></a-cursor>
+        </a-entity>
         
-        <a-link position="0 1.61 1" scale="0.2 0.2 0.2" href="typeface.html" title="My Homepage" image="bg.png"></a-link>
+        <a-link position="0 1.61 -1" scale="0.2 0.2 0.2" href="typeface.html" title="My Homepage" image="bg.png"></a-link>
         
         <a-plane color="#222b53" height="100" width="100" rotation="-90 0 0" material="color:#b2b5bd"></a-plane>
        
