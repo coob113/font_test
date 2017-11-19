@@ -6,20 +6,25 @@
 </head>
  
 <body>
-    <a-scene class="fullscreen" fog="far:10;color:#edeef4;near:0;density:0" >
+    <a-scene class="fullscreen" fog="far:10;color:black;near:0;density:0" >
         
         <a-entity position="0 1.61 0" camera="userHeight:0.01" look-controls="" data-aframe-inspector-original-camera="">
-            <a-cursor color="lavender" opacity="0.5" raycaster="" cursor=""></a-cursor>
+            <a-cursor color="white" opacity="0.5" raycaster="" cursor="fuse: true; fuseTimeout: 1500">
+                  <a-animation begin="click" easing="ease-in" attribute="scale" dur="150"
+               fill="forwards" from="0.1 0.1 0.1" to="1 1 1"></a-animation>
+  <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale" dur="1500"
+               fill="backwards" from="1 1 1" to="0.1 0.1 0.1"></a-animation>
+            </a-cursor>
         </a-entity>
         
         <a-link position="0 1.61 -1" scale="0.2 0.2 0.2" href="typeface.html" title="My Homepage" image="bg.png"></a-link>
         
-        <a-plane color="#222b53" height="100" width="100" rotation="-90 0 0" material="color:#b2b5bd"></a-plane>
+        <a-plane color="black" height="100" width="100" rotation="-90 0 0" material="color:#333"></a-plane>
        
-        <a-sky color="#edeef4"></a-sky>
+        <a-sky color="black"></a-sky>
     </a-scene>
   
-    <textarea readonly="" style="font-size: 12pt; border: 0px; padding: 0px; margin: 0px; position: absolute; left: -9999px; top: 0px;"></textarea>
+    <textarea readonly="" style="font-size: 16pt; border: 0px; padding: 0px; margin: 0px; position: absolute; left: -9999px; top: 0px; "></textarea>
      
 </body>
 </html>
